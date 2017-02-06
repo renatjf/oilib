@@ -1,0 +1,41 @@
+{
+  "name": "oilib",
+  "version": "1.0.1-10",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Durand Neto",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^1.19.1",
+    "immutable": "^3.8.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-jest": "^18.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "enzyme": "^2.7.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-react": "^3.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-webpack": "^1.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^18.1.0",
+    "path": "^0.12.7",
+    "react-addons-test-utils": "^15.4.1",
+    "react-test-renderer": "^15.4.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  }
+}
