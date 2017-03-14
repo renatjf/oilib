@@ -6,10 +6,8 @@ import thunkMiddleware from 'redux-thunk'
 
 import reducer from './../reducers'
 
-import TemplateECare from './../templates/ECare'
-
-import '../styles/Home.css'
-
+import TemplateProduct from './../templates/TemplateProduct'
+import '../styles/PageProduct.css'
 
 const createStoreWithMiddleware = applyMiddleware(
   thunkMiddleware,
@@ -17,19 +15,18 @@ const createStoreWithMiddleware = applyMiddleware(
 
 let store = createStoreWithMiddleware(reducer)
 
-class ECare extends Component {
+class PageProduct extends Component {
 
   render() {
-
     return (
     	<Provider store={store}>
-    		<TemplateECare> 
+    		<TemplateProduct { ...this.props }> 
     			{ this.props.children }
-    		</TemplateECare>
+    		</TemplateProduct>
     	</Provider>
     )
   }
 }
 
-export { ECare }
-export default ECare
+export { PageProduct }
+export default PageProduct

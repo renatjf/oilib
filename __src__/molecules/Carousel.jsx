@@ -3,10 +3,6 @@ import { TweenMax } from 'gsap'
 
 import Link from './../atoms/Link'
 import Box from './../atoms/Box'
-import './../styles/box.css'
-import './../styles/carousel.css'
-import './../styles/carousel-control.css'
-
 
 class Carousel extends Component {
 

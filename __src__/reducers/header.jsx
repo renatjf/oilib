@@ -1,14 +1,12 @@
-import { CHANGE_NAME } from '../actions'
+import { SHOW_MOBILE_MENU } from '../actions'
 import Immutable from 'immutable'
 
-let defaultState = Immutable.fromJS({ name : '', age: 30 })
+let defaultState = Immutable.fromJS({ showMobileMenu : false })
 
 function appReducer (state = defaultState, action) {
   switch ( action.type ) { 
-  	case CHANGE_NAME:    
-  	 	let name = action.name;
-  	 	let age = state.get('age') + 1;
-		return state.merge({name:name,age:age})
+  	case SHOW_MOBILE_MENU:    
+		return state.merge({showMobileMenu : action.show})
 		break
 	default: 
 		return state

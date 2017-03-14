@@ -4,26 +4,33 @@ import { bindActionCreators } from 'redux'
 import * as Actions from './../actions'
 
 import Header from './../organisms/Header'
+import Content from './../organisms/Content'
 import Footer from './../organisms/Footer'
+import ModalMobile from './../organisms/ModalMobile'
 import Carousel from './../molecules/Carousel'
 
-class Durand extends Component {
+
+
+class Home extends Component {
 
   render() {
 
-  	let { carousel, carousel_set_current, carousel_prev, carousel_next, header } = this.props
+  	let { carousel, carousel_set_current, carousel_prev, carousel_next, header, show_mobile_menu } = this.props
 
     return (
     	<div>
-        	<Header data={header}/>
+        	<Header data={header} show_mobile_menu={show_mobile_menu}/>
         	<Carousel 
         		data={carousel} 
         		carousel_set_current={carousel_set_current} 
         		carousel_prev={carousel_prev} 
         		carousel_next={carousel_next} 
         	/>
-        	{ this.props.children }
-        	<Footer /> 
+          <Content>
+            { this.props.children }          
+          </Content>
+        	<Footer />
+          <ModalMobile show_menu={header.get('showMobileMenu')}  show_mobile_menu={show_mobile_menu}/> 
         </div>
     );
     
@@ -41,5 +48,5 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(Actions, dispatch)
 }
 
-export { Durand }
-export default connect(mapStateToProps, mapDispatchToProps)(Durand)
+export { Home }
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

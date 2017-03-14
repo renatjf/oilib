@@ -3,6 +3,7 @@ export const RESET_CAROUSEL = Symbol('RESET_CAROUSEL')
 export const CAROUSEL_PREV = Symbol('CAROUSEL_PREV')
 export const CAROUSEL_NEXT = Symbol('CAROUSEL_NEXT')
 export const CAROUSEL_CURRENT = Symbol('CAROUSEL_CURRENT')
+export const SHOW_MOBILE_MENU = Symbol('SHOW_MOBILE_MENU')
 
 export function carousel_next(){
   return (dispatch,getState) => {
@@ -38,6 +39,17 @@ export function carousel_set_current(current, action){
 		  })
 		}
 	}
+}
+export function show_mobile_menu(){
+
+  return (dispatch, getState) => {
+    let show = !getState().header.get('showMobileMenu')
+      dispatch({
+        type: SHOW_MOBILE_MENU
+        , show
+      })
+  }
+ 
 }
 export function change_name(name, age){
   return {

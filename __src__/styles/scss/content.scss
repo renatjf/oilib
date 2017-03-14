@@ -1,0 +1,27 @@
+.container-full {
+    width: 100;
+    position: relative;
+
+    .container-grid {
+        @include gridContainer();
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        & .acesse_minha__oi {
+        	display: none;
+        	position: absolute;
+        	top: rem(35);
+        	right: 0;
+        	@include buttonHover(10, 30, 2);
+        	background-color: $color__yellow;
+        	font-size: rem(11);
+        	color: $color__black;
+
+        	 @media only screen and (min-width: 0px) and (max-width: 450px) {
+                    display: block;
+                }
+
+        }
+    }
+}

@@ -1,41 +1,133 @@
 {
-  "name": "oilib",
-  "version": "1.0.1-10",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
+  "_args": [
+    [
+      {
+        "raw": "oilib",
+        "scope": null,
+        "escapedName": "oilib",
+        "name": "oilib",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/renato-vml/oi-diversos/react-header-footer"
+    ],
+    [
+      {
+        "raw": "oilib",
+        "scope": null,
+        "escapedName": "oilib",
+        "name": "oilib",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/renato-vml/oi-diversos/react-header-footer"
+    ],
+    [
+      {
+        "raw": "oilib",
+        "scope": null,
+        "escapedName": "oilib",
+        "name": "oilib",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/renato-vml/Desktop/teste/ebilling-frontend"
+    ]
+  ],
+  "_from": "oilib",
+  "_id": "oilib@1.0.1-27",
+  "_inCache": true,
+  "_location": "/oilib",
+  "_nodeVersion": "6.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/oilib-1.0.1-27.tgz_1487969768566_0.9418880292214453"
   },
-  "author": "Durand Neto",
-  "license": "ISC",
+  "_npmUser": {
+    "name": "durand",
+    "email": "durand.neto@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "oilib",
+    "scope": null,
+    "escapedName": "oilib",
+    "name": "oilib",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/oilib/-/oilib-1.0.1-27.tgz",
+  "_shasum": "bfa6d1bfb470923b5994bc4ce9d5224ca0a6fa66",
+  "_shrinkwrap": null,
+  "_spec": "oilib",
+  "_where": "/Users/renato-vml/Desktop/teste/ebilling-frontend",
+  "author": {
+    "name": "Durand Neto"
+  },
   "dependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gsap": "^1.19.1",
     "immutable": "^3.8.1",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "postcss-loader": "^1.3.1",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
+    "react-test-renderer": "^15.4.2",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.13.1"
   },
+  "description": "# Modelo webpack aplicado",
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-jest": "^18.0.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "enzyme": "^2.7.0",
+    "babel-cli": "^6.23.0",
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "enzyme": "^2.7.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.1",
+    "gulp-copy2": "^0.2.0",
     "gulp-react": "^3.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
     "gulp-webpack": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^18.1.0",
+    "jest": "^19.0.0",
+    "open-browser-webpack-plugin": "0.0.4",
     "path": "^0.12.7",
-    "react-addons-test-utils": "^15.4.1",
-    "react-test-renderer": "^15.4.1",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.14.0"
-  }
+    "webpack": "^2.2.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "bfa6d1bfb470923b5994bc4ce9d5224ca0a6fa66",
+    "tarball": "https://registry.npmjs.org/oilib/-/oilib-1.0.1-27.tgz"
+  },
+  "gitHead": "45ed98ce7982b25f864dfb5bf38f5e5202fd94fc",
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "durand",
+      "email": "durand.neto@gmail.com"
+    }
+  ],
+  "name": "oilib",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "1.0.1-27"
 }

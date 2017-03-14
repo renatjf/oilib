@@ -6,10 +6,8 @@ import thunkMiddleware from 'redux-thunk'
 
 import reducer from './../reducers'
 
-import TemplateECare from './../templates/ECare'
-
-import '../styles/Home.css'
-
+import TemplateOiDigital from './../templates/TemplateOiDigital'
+import '../styles/PageOiDigital.css'
 
 const createStoreWithMiddleware = applyMiddleware(
   thunkMiddleware,
@@ -17,19 +15,18 @@ const createStoreWithMiddleware = applyMiddleware(
 
 let store = createStoreWithMiddleware(reducer)
 
-class ECare extends Component {
+class PageOiDigital extends Component {
 
   render() {
-
     return (
     	<Provider store={store}>
-    		<TemplateECare> 
+    		<TemplateOiDigital { ...this.props }> 
     			{ this.props.children }
-    		</TemplateECare>
+    		</TemplateOiDigital>
     	</Provider>
     )
   }
 }
 
-export { ECare }
-export default ECare
+export { PageOiDigital }
+export default PageOiDigital

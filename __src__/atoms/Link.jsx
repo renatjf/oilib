@@ -5,8 +5,6 @@ import { bindActionCreators } from 'redux'
 
 import * as Actions from './../actions'
 
-import './../styles/link.css';
-
 class Link extends Component {
 
   constructor(props) {
